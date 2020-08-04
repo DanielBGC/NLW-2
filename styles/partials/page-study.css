@@ -1,0 +1,216 @@
+#page-study #container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-header {
+    background-color: var(--color-primary);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.5rem 0;
+}
+
+.page-header .top-bar-container img {
+    height: 2rem;
+}
+
+.page-header .top-bar-container a {
+    height: 3rem;
+    transition: opacity 300ms;
+    opacity: 1;
+}
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.5;
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.page-header .header-content strong {
+    font: 700 3rem Archivo;
+    color: var(--color-title-in-primary);
+    line-height: 3.5rem;
+}
+
+#search-teachers {
+    margin-top: 3rem;
+}
+
+#search-teachers label {
+    color: var(--color-text-in-primary);
+}
+
+#search-teachers .select-block {
+    margin-bottom: 1.5rem;
+}
+
+.select-block label,
+.input-block label {
+    font-size: 1.4rem;
+    color: var(--color-text-complement);
+}
+
+.input-block input,
+.select-block select {
+    width: 100%;
+    height: 4.5rem;
+    margin-top: 0.4rem;
+    background-color: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.6rem;
+    outline: none;
+    padding: 0 1.2rem;
+    font: 1.5rem Archivo;
+}
+
+.input-block {
+    position: relative;
+}
+
+.input-block:focus-within::after {
+    content: "";
+
+    width: calc(100% - 4rem);
+    height: 3px;
+    background: var(--color-primary-light);
+
+    position: absolute;
+    left: 1.5rem;
+    bottom: 0;
+}
+
+#search-teachers button {
+    width: 100%;
+    height: 5.2rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    font: 700 2rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    transition: all 300ms;
+
+    margin-top: 3rem;
+}
+
+#search-teachers button:hover {
+    background: var(--color-secondary-dark);
+    font-size: 2.2rem;
+}
+
+#page-study main {
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.teacher-item {
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.6rem;
+    margin-top: 2.4rem;
+}
+
+.teacher-item header {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem;
+}
+
+.teacher-item header div strong {
+    font: 700 2rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+
+ .teacher-item header div span {
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 0.4rem;
+ }
+
+ .teacher-item p {
+     padding: 0.8rem;
+     font-size: 1.4rem;
+     line-height: 2.6rem;
+     text-align: justify;
+ }
+
+ .teacher-item footer {
+     padding: 0.5rem 2rem 2rem;
+     background-color: var(--color-box-footer);
+     border-top: 2px solid var(--color-line-in-white);
+     margin-top: 2rem;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .teacher-item footer p {
+     font-size: 1.2rem;
+     line-height: 1.4rem;
+     color: var(--color-text-complement);
+ }
+
+ .teacher-item footer p strong {
+     font-size: 1.5rem;
+     color: var(--color-primary);
+     display: block;
+     margin-top: 0.5rem;
+ }
+
+ .teacher-item footer button {
+     width: 20rem;
+     height: 5rem;
+     background-color: var(--color-secondary);
+     color: var(--color-button-text);
+
+     border: none;
+     border-radius: 0.6rem;
+     cursor: pointer;
+     font: 700 1.6rem Archivo;
+
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+
+     text-decoration: none;
+     
+     transition: background 300ms;
+     margin-left: 1.6rem;
+ }
+
+  .teacher-item footer button:hover {
+      background: var(--color-secondary-dark);
+  }
