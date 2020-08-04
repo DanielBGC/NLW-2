@@ -1,0 +1,90 @@
+:root {
+    font-size: 50%;
+}
+
+#page-landing {
+    background: var(--color-primary);
+}
+
+#page-landing #container {
+    color: var(--color-text-in-primary);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo-container img {
+    height: 10rem;
+}
+
+.logo-container h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-top: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.buttons-container a {
+    width: 30rem;
+    height: 10rem;
+
+    border-radius: 1rem;
+
+    font: 700 2rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: var(--color-button-text);
+}
+
+.buttons-container a.study {
+    background: var(--color-primary-lighter);
+    margin-right: 1.3rem;
+    transition: background 300ms;
+}
+
+.buttons-container a.study:hover {
+    background: var(--color-primary-light);
+}
+
+.buttons-container a.give-classes {
+    background: var(--color-secondary);
+    margin-right: 0;
+    transition: background 300ms;
+}
+
+.buttons-container a.give-classes:hover {
+    background: var(--color-secondary-dark);
+}
+
+.buttons-container a img {
+    width: 4rem;
+    margin-right: 2rem;
+}
+
+.total-connections {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-connections img {
+    margin-left: 1rem;
+}
