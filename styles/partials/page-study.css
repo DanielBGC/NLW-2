@@ -29,10 +29,22 @@
     height: 3rem;
     transition: opacity 300ms;
     opacity: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: var(--color-button-text);
 }
 
 .page-header .top-bar-container a:hover {
     opacity: 0.5;
+}
+
+.page-header .top-bar-container a img {
+    margin-right: 0.6rem;
 }
 
 .page-header .header-content {
@@ -129,8 +141,10 @@
 .teacher-item {
     background-color: var(--color-box-base);
     border: 1px solid var(--color-line-in-white);
-    border-radius: 0.6rem;
+    border-radius: 0.8rem;
     margin-top: 2.4rem;
+
+    margin-bottom: 2.4rem;
 }
 
 .teacher-item header {
@@ -177,6 +191,8 @@ margin-top: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    border-radius: 0 0 0.8rem 0.8rem;
 }
 
 .teacher-item footer p {
@@ -211,6 +227,8 @@ margin-top: 0.4rem;
     
     transition: background 300ms;
     margin-left: 1.6rem;
+
+    outline: none;
 }
 
 .teacher-item footer button:hover {
