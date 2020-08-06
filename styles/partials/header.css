@@ -1,0 +1,90 @@
+.page-header {
+    background-color: var(--color-primary);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.5rem 0;
+}
+
+.page-header .top-bar-container img {
+    height: 2rem;
+}
+
+.page-header .top-bar-container a {
+    height: 3rem;
+    transition: opacity 300ms;
+    opacity: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: var(--color-button-text);
+}
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.5;
+}
+
+.page-header .top-bar-container a img {
+    margin-right: 0.6rem;
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 3rem auto;
+
+    position: relative;
+}
+
+.page-header .header-content strong {
+    font: 700 3rem Archivo;
+    line-height: 3.5rem;
+    color: var(--color-title-in-primary);
+}
+
+.page-header .header-content p {
+    max-width: 30rem;
+    font-size: 1.5rem;
+
+    line-height: 2.2rem;
+
+    color: var(--color-text-in-primary);
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 700px) {
+    .page-header {
+        height: 400px;
+    }
+
+    .page-header .top-bar-container {
+        max-width: 1100px;
+    }
+
+    .page-header .header-content {
+        max-width: 740px;
+
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0 auto;
+    }
+}

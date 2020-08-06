@@ -3,63 +3,6 @@
     height: 100vh;
 }
 
-.page-header {
-    background-color: var(--color-primary);
-    
-    display: flex;
-    flex-direction: column;
-}
-
-.page-header .top-bar-container {
-    width: 90%;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 1.5rem 0;
-}
-
-.page-header .top-bar-container img {
-    height: 2rem;
-}
-
-.page-header .top-bar-container a {
-    height: 3rem;
-    transition: opacity 300ms;
-    opacity: 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-decoration: none;
-
-    color: var(--color-button-text);
-}
-
-.page-header .top-bar-container a:hover {
-    opacity: 0.5;
-}
-
-.page-header .top-bar-container a img {
-    margin-right: 0.6rem;
-}
-
-.page-header .header-content {
-    width: 90%;
-    margin: 3rem auto;
-
-    position: relative;
-}
-
-.page-header .header-content strong {
-    font: 700 3rem Archivo;
-    color: var(--color-title-in-primary);
-    line-height: 3.5rem;
-}
-
 #search-teachers {
     margin-top: 3rem;
 }
@@ -70,41 +13,6 @@
 
 #search-teachers .select-block {
     margin-bottom: 1.5rem;
-}
-
-.select-block label,
-.input-block label {
-    font-size: 1.4rem;
-    color: var(--color-text-complement);
-}
-
-.input-block input,
-.select-block select {
-    width: 100%;
-    height: 4.5rem;
-    margin-top: 0.4rem;
-    background-color: var(--color-input-background);
-    border: 1px solid var(--color-line-in-white);
-    border-radius: 0.6rem;
-    outline: none;
-    padding: 0 1.2rem;
-    font: 1.5rem Archivo;
-}
-
-.input-block {
-    position: relative;
-}
-
-.input-block:focus-within::after {
-    content: "";
-
-    width: calc(100% - 4rem);
-    height: 3px;
-    background: var(--color-primary-light);
-
-    position: absolute;
-    left: 1.5rem;
-    bottom: 0;
 }
 
 #search-teachers button {
@@ -248,7 +156,7 @@ margin-top: 0.4rem;
         max-width: 1100px;
     }
 
-    #page-header .header-content {
+    .page-header .header-content {
         max-width: 740px;
 
         flex: 1 1;
@@ -256,6 +164,8 @@ margin-top: 0.4rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        text-align: center;
 
         margin: 0 auto;
     }
@@ -270,7 +180,11 @@ margin-top: 0.4rem;
         grid-template-columns: repeat(4, 1fr);
         gap: 16px;
 
-        position: absolute;
+        position: relative;
+
+        margin: 3rem auto;
+
+        max-width: 740px;
     }
 
     #page-study main {
