@@ -41,10 +41,13 @@
     cursor: pointer;
 
     transition: all 300ms;
+
+    outline: none;
 }
 
 #page-give-classes fieldset legend button:hover {
     color: var(--color-primary-dark);
+    transform: scale(1.1);
 }
 
 #page-give-classes fieldset + fieldset {
