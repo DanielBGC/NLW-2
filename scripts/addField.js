@@ -13,6 +13,16 @@ function addField() {
         input.value = ""
     });
 
+    let removeButton = document.createElement("a");
+    let textButton = document.createTextNode("Remover");
+    removeButton.appendChild(textButton)
+
+    removeButton.addEventListener("click", function() {
+        this.parentElement.remove()
+    })
+
+    fieldContainer.appendChild(removeButton)
+
     //Add the fieldContainer to the page
     document.querySelector("#schedule-items").appendChild(fieldContainer)
 }
